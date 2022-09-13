@@ -16,3 +16,5 @@ Para rodar a aplicação utilize o visual studio code, apos instalar as tecnolog
 npm run dev
 
 utilize POSTMAN ou similares para fazer os request
+
+sobre: CRUD feito como um teste de nivelamente de processo seletivo e oportunidade de exercitar conhecimentos em Node.js
