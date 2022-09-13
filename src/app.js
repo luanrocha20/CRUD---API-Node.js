@@ -1,4 +1,4 @@
-import {criarTabela, inserirPessoa, atualizarPessoa, buscarPessoas, buscarUmaPessoa, deletarPessoa} from './Controller/Pessoa.js';
+import {criarTabela, adicionarPessoa, atualizarPessoa, buscarPessoas, buscarUmaPessoa, deletarPessoa} from './Controller/Pessoa.js';
 import express from 'express';
 const app = express();
 app.use(express.json());
@@ -6,7 +6,7 @@ app.use(express.json());
 criarTabela();
 
 app.post('/pessoa', function(req, res){
-    inserirPessoa(req.body);
+    adicionarPessoa(req.body);
     res.json({        
         "statusCode": 200
     })

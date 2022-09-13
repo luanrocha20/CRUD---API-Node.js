@@ -6,7 +6,7 @@ export async function criarTabela(){
     });
 }
 
-export async function inserirPessoa(pessoa){
+export async function adicionarPessoa(pessoa){
     openDb().then(db=>{
         db.run('INSERT INTO Pessoa(nome, idade) VALUES (?,?)', [pessoa.nome, pessoa.idade]);
     });
