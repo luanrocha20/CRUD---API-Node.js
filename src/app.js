@@ -1,4 +1,4 @@
-import {criarTabela, inserirPessoa, atualizarPessoa, buscarPessoas, buscarUmaPessoa} from './Controller/Pessoa.js';
+import {criarTabela, inserirPessoa, atualizarPessoa, buscarPessoas, buscarUmaPessoa, deletarPessoa} from './Controller/Pessoa.js';
 import express from 'express';
 const app = express();
 app.use(express.json());
@@ -35,5 +35,10 @@ app.put('/pessoa', function(req, res){
         })
     }
 });
+
+app.delete('/pessoa', async function(req, res){
+    let pessoa = await deletarPessoa(req.body.id);
+    res.json(pessoa)
+})
 
 app.listen(3000, ()=> console.log("Servidor rodando na porta 3000"))

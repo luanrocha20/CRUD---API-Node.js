@@ -29,3 +29,9 @@ export async function buscarUmaPessoa(id){
         return db.get('SELECT * FROM Pessoa WHERE id=?',[id]).then(res=>res)
     });
 }
+
+export async function deletarPessoa(id){
+    return openDb().then(db=>{
+        return db.get('DELETE FROM Pessoa WHERE id= ?', [id]).then(res=>res)
+    })
+}
