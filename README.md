@@ -4,10 +4,6 @@ Tecnologias necessárias:
 
 Node.js versão 16.17.0 ou superior;
 
-SQlite  versão 4.1.2 ou superior;
-
-SQlite3 versão 5.0.11 ou superior;
-
 GIT;
 
 POSTMAN ou similar para fazer get, put, patch e delete;
