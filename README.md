@@ -12,4 +12,4 @@ Caso queria editar o codigo, um editar o codigo será necessario um editor de te
 link para o projeto no Git Dev https://github.dev/luanrocha20/CRUD---API-Node.js
 
 
-sobre: CRUD feito como um teste de nivelamente de processo seletivo e oportunidade de exercitar conhecimentos em Node.js
+sobre: CRUD feito como um teste de nivelamente de processo seletivo e oportunidade de exercitar conhecimentos em Node.js, o mesmo é integrado com SQlite portando possui persistencia de dados
